@@ -381,6 +381,7 @@ jobs:
         github_token: ${{ secrets.MY_GITHUB_TOKEN }}
 
     - name: Build Bypass Kernel
+      if: false
       env:
         SOURCE_DATE_EPOCH: ${{ env.SOURCE_DATE_EPOCH }}
         KBUILD_BUILD_TIMESTAMP: ${{ env.KBUILD_BUILD_TIMESTAMP }}
